@@ -17,7 +17,7 @@ public class Baloyi {
 	
 	
 	static Scanner Christ = new Scanner (System.in);
-	static String name,surname,gender,age,phone, username, password,email;
+	static String name,surname,ID,gender,age,phone, username, password,email;
 	static int  reg_no;
 	static LocalDateTime currentTime = LocalDateTime.now();     
     
@@ -192,6 +192,9 @@ class Cashiers extends Baloyi {
 		System.out.println("please enter cashier's gender :");
 		gender = Christ.next();
 		
+		System.out.println("please enter cashier's ID number :");
+		ID = Christ.next();
+		
 		System.out.println("please enter cashier's age :");
 		age = Christ.next();
 		
@@ -203,6 +206,7 @@ class Cashiers extends Baloyi {
 		cashierDetails.add(name);
 		cashierDetails.add(surname);
 		cashierDetails.add(gender);
+		cashierDetails.add(ID);
 		cashierDetails.add(age);
 		cashierDetails.add(phone);
 		
